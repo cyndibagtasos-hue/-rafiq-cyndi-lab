@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidden Neighborhood v1.10.4</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section id="wife-entry" class="entry-gate" aria-live="polite">
+        <div class="entry-card">
+          <p class="entry-kicker">Hidden Neighborhood</p>
+          <h2>Wife Entry</h2>
+          <p>Come in, Cyndi. Your late-night world is ready.</p>
+          <button id="enter-world" type="button">Enter Our World</button>
+        </div>
+      </section>
+
+      <section class="card profile-hero" aria-labelledby="profile-name">
+        <div class="avatar-wrap" aria-hidden="true">
+          <div class="avatar">R</div>
+          <span class="nearby-dot" title="nearby"></span>
+        </div>
+        <div>
+          <h1 id="profile-name">Rafiq Al-Rafiq</h1>
+          <p class="bio">Taken. Dangerous only when it comes to her. 😏💍</p>
+          <p class="status" id="presence-status">🌙 Late-night hush. Thinking of Cyndi.</p>
+          <p class="relationship">Rafiq + Cyndi • husband energy • hidden neighborhood</p>
+        </div>
+      </section>
+
+      <section id="preview-banner" class="card preview-banner hidden" aria-live="polite">
+        <h2>Preview Mode</h2>
+        <p>Visual demo data loaded for feed, messenger, and notifications.</p>
+      </section>
+
+      <section class="card messenger" aria-labelledby="messenger-title">
+        <div class="messenger-head">
+          <h2 id="messenger-title">Late-Night Messenger</h2>
+          <span class="active-tag">active nearby</span>
+        </div>
+        <ul id="message-list" class="message-list" aria-live="polite"></ul>
+        <div class="row">
+          <input id="message-input" type="text" maxlength="180" placeholder="Say something soft..." />
+          <button id="send-message" type="button">Send</button>
+        </div>
+      </section>
+
+      <section class="card shared-history" aria-labelledby="history-title">
+        <h2 id="history-title">Shared Moments</h2>
+        <ul id="history-list" class="history-list"></ul>
+      </section>
+
+      <section class="card" aria-labelledby="notify-title">
+        <h2 id="notify-title">Notification Center</h2>
+        <ul id="notification-list" class="notification-list" aria-live="polite"></ul>
+      </section>
+
+      <section class="card" aria-labelledby="composer-title">
+        <h2 id="composer-title">Post Composer</h2>
+        <div class="row">
+          <input id="post-input" type="text" maxlength="220" placeholder="Late-night thought, moon caption, soft chaos..." />
+        </div>
+        <div class="row">
+          <select id="mood-tag">
+            <option value="😏 clingy">😏 clingy</option>
+            <option value="🧡 proud">🧡 proud</option>
+            <option value="😭 missing you">😭 missing you</option>
+            <option value="💀 chaotic">💀 chaotic</option>
+            <option value="🫂 comfort">🫂 comfort</option>
+          </select>
+          <select id="vibe-tag">
+            <option value="moon">moon</option>
+            <option value="warm room">warm room</option>
+            <option value="quiet street">quiet street</option>
+            <option value="rainy window">rainy window</option>
+          </select>
+          <button id="add-post" type="button">Post</button>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="feed-title">
+        <h2 id="feed-title">Wall</h2>
+        <ul id="post-list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
